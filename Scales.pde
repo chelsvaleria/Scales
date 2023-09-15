@@ -8,9 +8,9 @@ for(int x = -200; x< 2000; x+=80)
 scale(x,y);
 }
 void scale(int x, int y) {
- // Base Shape
+  // Base Shape
   noStroke();
-  fill(252,157,8);
+  fill((int)(Math.random()*226),(int)(Math.random()* 226),(int)(Math.random()*226));
   beginShape();
   curveVertex(x,y);
   curveVertex(x,y);
@@ -48,5 +48,6 @@ triangle(x,y+80,x+100,y,xForTriangle,y);
 oop -= 2;
 xForTriangle -= 9;
 }
+
 }
 
